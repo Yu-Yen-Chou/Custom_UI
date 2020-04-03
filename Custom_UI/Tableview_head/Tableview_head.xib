@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Tableview_head" customModule="Custom_UI" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="oj8-WJ-dc3" id="yPF-z0-KXr"/>
+                <outlet property="top_V" destination="onR-B8-7ET" id="rNi-U7-vjw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oj8-WJ-dc3">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="onR-B8-7ET" customClass="top_view" customModule="Custom_UI" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="BsA-kv-aVB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="oj8-WJ-dc3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2SL-5A-OW7"/>
+                <constraint firstItem="onR-B8-7ET" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3ui-Xo-VDi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="onR-B8-7ET" secondAttribute="trailing" id="iID-ba-grp"/>
+                <constraint firstItem="oj8-WJ-dc3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="o7u-K6-F9r"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="oj8-WJ-dc3" secondAttribute="bottom" id="olh-az-h3f"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oj8-WJ-dc3" secondAttribute="trailing" id="pMc-38-llh"/>
+                <constraint firstItem="onR-B8-7ET" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="wmk-qw-Oo4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
+        </view>
+    </objects>
+</document>
